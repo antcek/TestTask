@@ -1,0 +1,58 @@
+.header {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+
+  table {
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      border: 1px solid rgb(134, 14, 231);
+      padding: 8px;
+      color: rgb(206, 23, 124);
+      text-align: center;
+    }
+
+    th {
+      background-color: rgb(182, 240, 232, 0.5);
+    }
+  }
+
+  .total {
+    margin-top: 20px;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    gap: 20px;
+
+    p {
+      font-weight: 700;
+      
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: lightblue;
+      color: white;
+      border: none;
+      font-weight: 500;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: blue;
+      }
+    }
+  }
+}
