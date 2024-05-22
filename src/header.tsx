@@ -5,7 +5,7 @@ import styles from "./header.module.scss";
 import Link from "next/link";
 import cls from "classnames";
 
-const HeaderDropdown = ({ dropdownShown }) => {
+const HeaderDropdown = ({ dropdownShown }: { dropdownShown: boolean }) => {
   return (
     <div className={cls(styles.dropdown, { [styles.shown]: dropdownShown })}>
       <ul className={styles.dropdown__list}>
